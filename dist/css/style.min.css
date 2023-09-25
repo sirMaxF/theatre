@@ -1231,7 +1231,7 @@ button.swiper-pagination-bullet {
   width: 80px;
   height: 80px;
 }
-.afisha__title {
+.title {
   font-family: Garamond;
   font-size: 48px;
   font-weight: bold;
@@ -1243,16 +1243,17 @@ button.swiper-pagination-bullet {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1147px) {
-  .afisha__title {
+  .title {
     font-size: 34px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 705px) {
-  .afisha__title {
+  .title {
     font-size: 27px;
   }
 }
+
 .afisha__grid {
   display: grid;
   grid-template: repeat(2, fit-content(304px))/1fr;
@@ -1262,14 +1263,6 @@ button.swiper-pagination-bullet {
 .line {
   border-radius: 16px;
 }
-.line:hover {
-  transition: all 0.3s ease 0.1s;
-  box-shadow: 10px 5px 5px #d2d2d4;
-}
-.line > * :hover {
-  transition: all 0.3s ease 0.1s;
-  opacity: 0.75;
-}
 .line__grid {
   display: grid;
   grid-template-areas: "date img lineTitle input" "date img lineSubTitle input" "date img lineInfo input";
@@ -1278,6 +1271,14 @@ button.swiper-pagination-bullet {
   padding: 32px 60px;
   grid-column-gap: 62.33px;
   justify-content: space-around;
+}
+.line__grid:hover {
+  transition: all 0.3s ease 0.1s;
+  box-shadow: 10px 5px 5px #d2d2d4;
+}
+.line__grid > * :hover {
+  transition: all 0.3s ease 0.1s;
+  opacity: 0.75;
 }
 @media screen and (max-width: 1297px) {
   .line__grid {
@@ -1423,4 +1424,74 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.news__row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -12px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 0 1 20%;
+  padding: 0 12px;
+  border-radius: 12px;
+}
+.column:hover {
+  transition: background-color 0.6s ease 0.1s;
+  background-color: #e4e5ea;
+}
+.column__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 12px;
+}
+.column__row > * {
+  margin-bottom: 12px;
+}
+.column__img {
+  width: 300px;
+  height: 204px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media screen and (max-width: 975px) {
+  .column__img {
+    width: 200px;
+    height: 135px;
+  }
+}
+.column__img img {
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.column__img img:hover {
+  transition: transform 0.6s ease 0.1s;
+  transform: scale(2);
+}
+.column__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+@media screen and (max-width: 975px) {
+  .column__title {
+    font-size: 18px;
+  }
+}
+.column__description {
+  opacity: 0.75;
+  font-family: FiraSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
 }
