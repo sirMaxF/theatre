@@ -957,15 +957,9 @@ button.swiper-pagination-bullet {
 .content > * {
   margin-bottom: 60px;
 }
-.content > *:last-child {
-  margin-bottom: 0;
-}
 @media screen and (max-width: 803px) {
   .content > * {
     margin-bottom: 25px;
-  }
-  .content > *:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -1494,4 +1488,102 @@ button.swiper-pagination-bullet {
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
+}
+
+.footer {
+  background-color: #191919;
+}
+.footer__row {
+  padding: 60px 0;
+  display: grid;
+  grid-template: 1fr/repeat(auto-fill, minmax(auto, 316px));
+  align-items: start;
+  gap: 50px;
+}
+@media screen and (max-width: 707px) {
+  .footer__row {
+    grid-template: repeat(2, auto)/183px;
+    gap: 0;
+  }
+  .footer__row [class*=__row] {
+    display: none;
+  }
+  .footer__row [class*=__title] {
+    border-bottom: 1px solid #e4e5ea;
+  }
+}
+.footer__event {
+  display: grid;
+  justify-content: start;
+}
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: #e4e5ea;
+}
+.footer__name {
+  display: grid;
+  grid-template: 86px/1fr;
+  justify-items: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.footer ._active {
+  display: grid;
+}
+
+.event__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.event__row {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  gap: 24px;
+}
+@media screen and (max-width: 707px) {
+  .event__row {
+    grid-template: repeat(3, 1fr)/1fr;
+  }
+}
+.contacts__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.contacts__item {
+  margin-bottom: 24px;
+}
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.event__row *,
+.contacts__row * {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
