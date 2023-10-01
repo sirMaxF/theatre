@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главная</title>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+    <div class="container">
+        <nav class="header__menu menu">
+            <a href="index.html" class="menu__logo">
+                <img src="img/pngwing.com.png" alt="">
+            </a>
+            <div class=" menu__body">
+                <div class="menu__icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="menu__list">
+                    <li><a href="" class="menu__link">Афиша</a></li>
+                    <li><a href="" class="menu__link">Заказ билетов</a></li>
+                    <li><a href="" class="menu__link">Контакты</a></li>
+                    <li><a href="" class="menu__link">История</a></li>
+                    <li><a href="" class="menu__link">Планы залов</a></li>
+                    <li><a href="" class="menu__link">Личный кабинет</a>
+                        <div class="link__icon"><img src="img/icons/icons.svg#arrow-circle-down-fill-svgrepo-com"
+                                alt="">
+                        </div>
+                        <ul class="menu__sublist">
+                            <li><a href="reg.html" class="menu__sublink">Регистрация</a></li>
+                            <li><a href="enter.html" class="menu__sublink">Вход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+            <div class="registration">
+                <div class="container">
+                    <div class="registration__title title">Регистрация</div>
+                    <div class="registration__disclaimer">В даной форме регистрации используется валидация большей
+                        частью средствами HTML5 и совсем чуть-чуть JS</div>
+
+                    <form action="">
+                        <div class="registration__grid">
+                            <div class="registration__item">
+                                <label for="name">Имя</label>
+                                <input type="text" name="name" id="name" required>
+
+                            </div>
+                            <div class="registration__item">
+                                <label for="number">Возраст</label>
+                                <input type="number" name="number" id="number" min="18" required>
+                            </div>
+                            <div class="registration__item">
+                                <label for="email">Электронная почта</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="registration__item">
+                                <label for="password1">Пароль</label>
+                                <input type="password" name="password1" id="password1"
+                                    pattern="(\d*|[A-Z]*|[a-z]*)([A-Z]*|\d*|[a-z]*)([A-Z]*|[a-z]*|\d*)" required>
+                            </div>
+                            <div class="registration__item">
+                                <label for="password2">Повторите пароль</label>
+                                <input type="password" name="password2" id="password2" required>
+                            </div>
+                            <div class="registration__item">
+                                <input type="submit" name="submit-reg" value="Зарегистрироваться">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__event event">
+                <div class="event__title">Мероприятия</div>
+                <div class="event__row">
+                    <a href="" class="event__item">Экскурсии</a>
+                    <a href="" class="event__item">Экскурсии</a>
+                    <a href="" class="event__item">Экскурсии</a>
+                </div>
+            </div>
+            <div class="footer__contacts contacts">
+                <div class="contacts__title">Контакты театра</div>
+                <div class="contacts__row">
+                    <div class="contacts__item">г. Санкт-Петербург, Невский пр., д. 1</div>
+                    <div class="contacts__item">text@mail. ru</div>
+                    <div class="contacts__item">(812) 123-45-67</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__name">Сайт ко</div>
+    </div>
+</footer>
+
+    </div>
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
